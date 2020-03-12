@@ -46,7 +46,7 @@ totalStepsSummary <- summarise(totalStepsDay, meanOfTotalSteps=mean(totalStepsDa
 print(totalStepsSummary)
 ```
 
-
+mean value calculated is **10766.19**, and the median value **10765**.
 
 ## What is the average daily activity pattern?
 
@@ -67,7 +67,7 @@ plot(x=meanStepsInterval$interval, y=meanStepsInterval$steps, type="l",
 ```{r, echo=TRUE}
 meanStepsInterval[grep(max(meanStepsInterval$steps), meanStepsInterval$steps), ]
 ```
-
+interval with the maximum number of steps is interval **835**.
 
 ## Imputing missing values
 ```{r, echo=TRUE}
